@@ -1,0 +1,29 @@
+.quiz-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 70px;
+}
+
+.question-text {
+  padding-inline: 19px;
+  font-family: monospace !important;
+  font-size: 20px !important;
+}
+
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #2b3863 !important;
+}
+
+.answer-box {
+  margin-top: 11px !important;
+  width: 95%;
+}
+
+.submit-button {
+  margin-top: 33px !important;
+  width: 40%;
+  background-color: #4a5471 !important;
+  color: #fff !important;
+}
