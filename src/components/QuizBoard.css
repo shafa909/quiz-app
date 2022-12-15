@@ -1,0 +1,18 @@
+.quiz-board-container {
+  height: 400px;
+  width: 50%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+}
+
+.board-light {
+  background-color: #ffffff;
+}
+
+.board-dark {
+  background-color: #81899f;
+}

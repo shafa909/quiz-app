@@ -1,0 +1,32 @@
+.score-board {
+  display: flex;
+  justify-content: space-between;
+}
+
+.score {
+  font-family: monospace;
+  display: inline-flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+  margin-left: 11px;
+  margin-top: 11px;
+}
+
+.score-dark {
+  color: #ffff;
+}
+
+.mistakes {
+  font-family: monospace;
+  display: inline-flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+  margin-right: 11px;
+  margin-top: 11px;
+}
+
+.mistakes-dark {
+  color: #ffff;
+}
