@@ -34,6 +34,18 @@ const QuizBoard = ({ theme }) => {
       }
     });
   };
+
+  const restartGame = () => {
+    setCurrentIndex(1);
+    setQuestionMap((prev) => new Map(prev.clear()));
+    setScore(0);
+    setMistakes(0);
+    setShowPopup(false);
+    getQuestions().then(async (result) => {
+      updateQuestions(result);
+    });
+  };
+
   useEffect(() => {
     if (mistakes === 3) setShowPopup(true);
   }, [mistakes]);
@@ -61,7 +73,7 @@ const QuizBoard = ({ theme }) => {
         setUserAnswer={setUserAnswer}
         handleSubmit={onHandleSubmit}
       />
-      <PopupModel open={showPopup} score={score} theme={theme} />
+      <PopupModel open={showPopup} score={score} restartGame={restartGame} />
     </div>
   );
 };

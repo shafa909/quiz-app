@@ -21,7 +21,9 @@ const PopUpModel = ({ open, score, theme, restartGame }) => {
           </div>
         </div>
       </DialogContent>
-      <Button className='submit-button'>Play Again</Button>
+      <Button className='submit-button' onClick={restartGame}>
+        Play Again
+      </Button>
     </Dialog>
   );
 };
