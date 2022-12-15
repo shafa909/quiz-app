@@ -1,0 +1,15 @@
+.toggle-button-group {
+  float: right;
+  margin-right: 14px;
+  margin-top: 14px;
+  height: 12px;
+}
+
+.toggle-button {
+  color: #000000;
+}
+
+.Mui-selected {
+  background-color: #4a5471 !important;
+  color: #ffffff !important;
+}
