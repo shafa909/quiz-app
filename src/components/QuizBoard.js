@@ -8,7 +8,7 @@ import PopupModel from './PopupModel';
 
 const QuizBoard = ({ theme }) => {
   const [questionMap, setQuestionMap] = useState(new Map());
-  const [score, setScore] = useState(7);
+  const [score, setScore] = useState(0);
   const [mistakes, setMistakes] = useState(0);
   const [userAnswer, setUserAnswer] = useState('');
   const [currentIndex, setCurrentIndex] = useState(1);
