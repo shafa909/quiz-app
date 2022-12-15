@@ -1,0 +1,20 @@
+.total-score {
+  display: flex;
+}
+
+.score {
+  font-family: monospace;
+  display: inline-flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+  margin-left: 11px;
+  margin-top: 11px;
+}
+
+.submit-button {
+  background-color: #4a5471 !important;
+  color: #fff !important;
+  margin-inline: auto !important;
+  margin-bottom: 20px !important;
+}
