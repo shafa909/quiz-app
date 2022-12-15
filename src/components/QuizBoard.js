@@ -59,7 +59,6 @@ const QuizBoard = ({ theme }) => {
   }, [currentIndex, questionMap]);
   useEffect(() => {
     getQuestions().then(async (result) => {
-      console.log(result);
       updateQuestions(result);
     });
   }, []);
