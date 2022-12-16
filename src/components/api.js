@@ -4,7 +4,10 @@ const baseURL = 'https://eok9ha49itquif.m.pipedream.net';
 export const getQuestions = async () => {
   return axios
     .get(baseURL)
-    .then((response) => {})
+    .then((response) => {
+      console.log();
+      return response.data.questions;
+    })
     .catch(() => {
       // acuatlly I got error while fetching api that provided by sauce lab,
       // so I created some question set from json file that exist in shared test git repo.
