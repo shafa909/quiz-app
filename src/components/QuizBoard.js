@@ -27,6 +27,7 @@ const QuizBoard = ({ theme }) => {
       setCurrentIndex(currentIndex + 1);
     }
   };
+
   const updateQuestions = (questionList) => {
     questionList.forEach((qs) => {
       if (!questionMap.has(qs.question)) {
@@ -49,6 +50,7 @@ const QuizBoard = ({ theme }) => {
   useEffect(() => {
     if (mistakes === 3) setShowPopup(true);
   }, [mistakes]);
+
   useEffect(() => {
     if (mistakes < 3 && currentIndex === questionMap.size - 2) {
       getQuestions().then(async (result) => {
@@ -57,6 +59,7 @@ const QuizBoard = ({ theme }) => {
     }
     setCurrentQuestion(Array.from(questionMap.keys())[currentIndex]);
   }, [currentIndex, questionMap]);
+
   useEffect(() => {
     getQuestions().then(async (result) => {
       updateQuestions(result);
