@@ -16,7 +16,7 @@ const QuizBoard = ({ theme }) => {
   const [showPopup, setShowPopup] = useState(false);
 
   const onHandleSubmit = async () => {
-    const hash = await sha1(userAnswer);
+    const hash = await sha1(userAnswer.toLocaleLowerCase());
     if (questionMap.has(currentQuestion) && questionMap.get(currentQuestion) === hash) {
       setScore(score + 1);
     } else {
