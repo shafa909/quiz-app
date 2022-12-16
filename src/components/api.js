@@ -5,7 +5,6 @@ export const getQuestions = async () => {
   return axios
     .get(baseURL)
     .then((response) => {
-      console.log();
       return response.data.questions;
     })
     .catch(() => {
